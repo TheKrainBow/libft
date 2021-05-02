@@ -6,7 +6,7 @@
 /*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/19 04:37:13 by mdelwaul          #+#    #+#             */
-/*   Updated: 2021/05/02 20:03:10 by magostin         ###   ########.fr       */
+/*   Updated: 2021/05/02 20:03:50 by magostin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_swap_str(char **a, char **b)
 	free(*b);
 	*a = a_t;
 	*b = b_t;
-	azeaze
 }
 
 char	**ft_sort_strs(char **strs)
