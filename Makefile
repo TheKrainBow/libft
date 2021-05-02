@@ -84,6 +84,7 @@ SRCS_STRS	=	strs/ft_split.c							\
 				strs/ft_strtrunc.c						\
 				strs/ft_substr.c						\
 				strs/ft_sort_strs.c						\
+				strs/ft_tabjoin.c						\
 				strs/ft_tablen.c						\
 
 
