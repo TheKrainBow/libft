@@ -7,22 +7,6 @@ SRCS_CHAR	=	char/ft_isalnum.c						\
 				char/ft_tolower.c						\
 				char/ft_toupper.c						\
 
-SRCS_PRINTF	=	ft_printf/ft_printf.c					\
-				ft_printf/ft_parsing.c					\
-				ft_printf/char.c						\
-				ft_printf/string.c						\
-				ft_printf/number.c						\
-				ft_printf/hexa.c						\
-				ft_printf/address.c						\
-				ft_printf/unsigned.c					\
-				ft_printf/convert.c						\
-				ft_printf/strchr.c						\
-				ft_printf/float_print.c					\
-				ft_printf/float.c						\
-				ft_printf/float2.c						\
-				ft_printf/node.c						\
-				ft_printf/float_whole.c					\
-
 SRCS_GNL	=	get_next_line/get_next_line.c			\
 				get_next_line/get_next_line_utils.c
 
@@ -88,7 +72,7 @@ SRCS_STRS	=	strs/ft_split.c							\
 				strs/ft_tablen.c						\
 
 
-SRCS		=	$(SRCS_CHAR) $(SRCS_GNL) $(SRCS_LST) $(SRCS_MATH) $(SRCS_MEM) $(SRCS_PRINT) $(SRCS_STRS) $(SRCS_PRINTF)
+SRCS		=	$(SRCS_CHAR) $(SRCS_GNL) $(SRCS_LST) $(SRCS_MATH) $(SRCS_MEM) $(SRCS_PRINT) $(SRCS_STRS)
 
 OBJS		=	$(SRCS:.c=.o)
 
