@@ -6,13 +6,13 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/07 05:32:47 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:05:55 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:49:01 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	ft_putnbr_fd(n, 1);
 }
@@ -33,7 +33,7 @@ static void	ft_putnbr_fd2(int i, int n, int neg, int fd)
 	}
 }
 
-void		ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int		i;
 	int		temp;

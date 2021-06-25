@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/06 12:50:13 by magostin          #+#    #+#             */
-/*   Updated: 2021/05/02 19:36:35 by magostin         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:24:05 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <limits.h>
 # include <wchar.h>
 
-typedef struct	s_float
+typedef struct s_float
 {
 	long int	temp_int;
 	long double	temp;
@@ -33,7 +33,7 @@ typedef struct	s_float
 	int			neg;
 }				t_float;
 
-typedef struct	s_arg
+typedef struct s_arg
 {
 	char		flags;
 	int			zero;
@@ -45,7 +45,7 @@ typedef struct	s_arg
 	char		conv;
 }				t_arg;
 
-typedef struct	s_pf
+typedef struct s_pf
 {
 	va_list		*ap;
 	char		*str_pars;

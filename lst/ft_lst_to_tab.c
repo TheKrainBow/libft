@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 17:51:11 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:10:08 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:29:41 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char	**ft_lst_to_tab(t_list *lst)
 	char	**dest;
 	int		i;
 
-	if (!(dest = malloc(sizeof(char *) * (ft_lstsize(lst) + 1))))
+	dest = malloc(sizeof(char *) * (ft_lstsize(lst) + 1));
+	if (!(dest))
 		return (NULL);
 	i = 0;
 	while (lst)

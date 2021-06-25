@@ -6,13 +6,13 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 13:51:14 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/07 02:40:24 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:31:04 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstprint_fd(t_list *lst, int fd)
+void	ft_lstprint_fd(t_list *lst, int fd)
 {
 	int		i;
 
@@ -27,7 +27,7 @@ void		ft_lstprint_fd(t_list *lst, int fd)
 	}
 }
 
-void		ft_lstprint(t_list *lst)
+void	ft_lstprint(t_list *lst)
 {
 	while (lst)
 	{

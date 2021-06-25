@@ -6,15 +6,15 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/16 01:05:40 by mdelwaul          #+#    #+#             */
-/*   Updated: 2021/04/16 01:11:58 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:50:14 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_pow(int a, int b)
+int	ft_pow(int a, int b)
 {
-	int temp;
+	int	temp;
 
 	temp = a;
 	while (b > 1)

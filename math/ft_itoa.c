@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/06 23:16:30 by magostin          #+#    #+#             */
-/*   Updated: 2019/11/14 23:08:25 by magostin         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:50:58 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static int	ft_pow(int a, int b)
 {
-	int temp;
+	int	temp;
 
 	temp = a;
 	while (b > 1)
@@ -34,7 +34,8 @@ static char	*ft_itoa2(int i, long int n, int neg)
 	int		j;
 
 	j = 0;
-	if (!(dest = malloc((i + 1) * sizeof(char))))
+	dest = malloc((i + 1) * sizeof(char));
+	if (!(dest))
 		return (0);
 	if (neg == -1)
 	{
@@ -55,7 +56,7 @@ static char	*ft_itoa2(int i, long int n, int neg)
 	return (&dest[0]);
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int			i;
 	long int	temp;

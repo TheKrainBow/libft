@@ -6,11 +6,11 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/14 14:03:51 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:08:39 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:45:47 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int			ft_tablen(char **strs)
+int	ft_tablen(char **strs)
 {
 	int			i;
 

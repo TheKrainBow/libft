@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/27 15:22:12 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:09:23 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:27:59 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*dest;
 	t_list	*temp;
@@ -20,7 +20,8 @@ t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	dest = NULL;
 	while (lst)
 	{
-		if (!(temp = ft_lstnew(f(lst->content))))
+		temp = ft_lstnew(f(lst->content));
+		if (!(temp))
 		{
 			ft_lstclear(&dest, del);
 			return (NULL);

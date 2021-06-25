@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 21:51:33 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/30 23:49:26 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:30:17 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	t_list *maillon;
+	t_list	*maillon;
 
 	if (!alst || !new)
 		return ;

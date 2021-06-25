@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 13:29:09 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:09:07 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:38:33 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strndup(char *str, int start, int len)
 
 	if (!str || start > (int)ft_strlen(str) || len < 0)
 		return (NULL);
-	if (!(dest = malloc(sizeof(char) * (ft_min(len, (int)ft_strlen(str)) + 1))))
+	dest = malloc(sizeof(char) * (ft_min(len, (int)ft_strlen(str)) + 1));
+	if (!(dest))
 		return (NULL);
 	i = -1;
 	while (i < len && str[++i + start])

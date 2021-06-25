@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 23:11:24 by marvin            #+#    #+#             */
-/*   Updated: 2019/11/27 19:51:10 by magostin         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:43:37 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	ft_free(char **dest, int wcount)
 
 static int	ft_countletter(char *s, char c, int i)
 {
-	int j;
+	int	j;
 
 	j = 0;
 	while (s[i + j] != 0 && s[i + j] != c)

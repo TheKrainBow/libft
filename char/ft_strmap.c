@@ -6,13 +6,13 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/04 12:36:21 by mdelwaul          #+#    #+#             */
-/*   Updated: 2021/04/07 02:32:01 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:26:06 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strmap(char *str, int (*f)(int))
+int	ft_strmap(char *str, int (*f)(int))
 {
 	while (str && *(str))
 		if (!(f(*(str++))))

@@ -6,18 +6,18 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 13:04:56 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/16 01:04:56 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:49:21 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_print_tab(char **strs)
+void	ft_print_tab(char **strs)
 {
 	ft_print_tab_fd(strs, 1);
 }
 
-void		ft_print_tab_fd(char **strs, int fd)
+void	ft_print_tab_fd(char **strs, int fd)
 {
 	int			i;
 

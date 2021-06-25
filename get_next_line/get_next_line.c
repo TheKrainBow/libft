@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 14:52:24 by gboucett          #+#    #+#             */
-/*   Updated: 2021/04/16 01:07:38 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:27:10 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	ft_read(int fd, char *buffer, char **line)
 	return (0);
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	static char		buffer[100][BUFFER_SIZE + 1];
 	int				pos;

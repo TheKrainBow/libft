@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/15 22:16:51 by magostin          #+#    #+#             */
-/*   Updated: 2021/05/01 00:00:51 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:28:21 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list *temp;
+	t_list	*temp;
 
 	if (!del)
 		return ;

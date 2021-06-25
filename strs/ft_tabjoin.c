@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tabjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/02 18:36:20 by magostin          #+#    #+#             */
-/*   Updated: 2021/04/02 18:58:41 by magostin         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:35:37 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		**ft_tabjoin(char **s1, char **s2)
+char	**ft_tabjoin(char **s1, char **s2)
 {
 	char		**dest;
 	int			size;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_strs.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: magostin <magostin@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/19 04:37:13 by mdelwaul          #+#    #+#             */
-/*   Updated: 2021/05/02 20:52:12 by magostin         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:45:32 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_swap_str(char **a, char **b)
 {
-	char *a_t;
-	char *b_t;
+	char	*a_t;
+	char	*b_t;
 
 	a_t = ft_strdup(*b);
 	b_t = ft_strdup(*a);
@@ -42,18 +42,20 @@ char	**ft_sort_strs(char **strs)
 		swaped = 0;
 		i = -1;
 		while (copy[++i + 1])
+		{
 			if (ft_strcmp(copy[i], copy[i + 1]) > 0)
 			{
 				ft_swap_str(&copy[i], &copy[i + 1]);
 				swaped = 1;
 			}
+		}
 	}
 	return (copy);
 }
 
 void	ft_sort_strs_to(char ***strs)
 {
-	char **dest;
+	char	**dest;
 
 	dest = ft_sort_strs(*strs);
 	ft_free_tab(*strs);

@@ -6,13 +6,13 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/20 14:52:29 by gboucett          #+#    #+#             */
-/*   Updated: 2021/04/16 01:08:01 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 13:26:58 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void			*ft_memmove_sp(void *dst, const void *src, size_t len)
+void	*ft_memmove_sp(void *dst, const void *src, size_t len)
 {
 	char	*srcc;
 	char	*dstc;
@@ -40,7 +40,7 @@ static size_t	ft_strlen_sp(const char *str)
 	return (len);
 }
 
-char			*ft_strdup_sp(const char *s1)
+char	*ft_strdup_sp(const char *s1)
 {
 	char	*result;
 	size_t	i;
@@ -55,7 +55,7 @@ char			*ft_strdup_sp(const char *s1)
 	return (result);
 }
 
-char			*ft_strjoin_sp(const char *s1, const char *s2)
+char	*ft_strjoin_sp(const char *s1, const char *s2)
 {
 	size_t	size;
 	char	*result;
@@ -80,7 +80,7 @@ char			*ft_strjoin_sp(const char *s1, const char *s2)
 	return (result);
 }
 
-int				ft_strchr_sp(char *buffer, char chr)
+int	ft_strchr_sp(char *buffer, char chr)
 {
 	int		pos;
 
