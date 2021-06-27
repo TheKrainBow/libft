@@ -6,7 +6,7 @@
 /*   By: mdelwaul <mdelwaul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 04:57:07 by magostin          #+#    #+#             */
-/*   Updated: 2021/06/25 13:25:05 by mdelwaul         ###   ########.fr       */
+/*   Updated: 2021/06/25 14:36:15 by mdelwaul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include "color.h"
-# include "ft_printf.h"
 # include "get_next_line.h"
 
 typedef struct s_list
